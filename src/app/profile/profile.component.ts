@@ -8,7 +8,7 @@ import {GithubService} from '../github.service';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _githubService: GithubService) { }
 
   ngOnInit() {
   }
