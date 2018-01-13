@@ -5,6 +5,8 @@ import {User} from './user'
 @Injectable()
 export class GithubService {
 
-  constructor() { }
-
+  constructor() {
+    console.log('Github Service Ready...');
+    this.username ='MrazTevin';
+  }
 }
