@@ -8,10 +8,11 @@ import 'rxjs/add/operator/map';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  user[];
 
   constructor(private _githubService: GithubService) {
     this._githubService.getUser().subscribe(user => {
-      console.log(user);
+      //console.log(user);
     })
   }
 
