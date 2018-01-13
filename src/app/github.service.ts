@@ -5,8 +5,12 @@ import {User} from './user'
 @Injectable()
 export class GithubService {
 
-  constructor(private _http:Http){
+  constructor(private _http: HttpClient){
     console.log('Github Service Ready...');
     this.username ='MrazTevin';
+  }
+  getUser(){
+    return this._http.get('http://api.github.com/users/'+this.username)
+    .map(res =>res.json())
   }
 }
