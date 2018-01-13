@@ -10,6 +10,7 @@ export class GithubService {
     this.username ='MrazTevin';
   }
   getUser(){
-    return this._http.get('http://api.github.com/users/'+this.username)
+    return this._http.get("http://api.github.com/users/"+this.username)
+
   }
 }
