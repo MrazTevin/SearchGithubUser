@@ -15,7 +15,10 @@ export class ProfileComponent implements OnInit {
       console.log(user);
       this.user = user;
     })
-    this._githubService.getUser().
+    this._githubService.getRepos().subscribe(repos => {
+      console.log(user);
+      this.repos = repos;
+    })
   }
   ngOnInit() {
   }
