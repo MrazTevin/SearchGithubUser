@@ -25,14 +25,15 @@
          <div *ngFor="let repo of repos">
          <div class="row">
            <div class="col-md-9">
-             <h4>{{repo.name}}</h4>
+             <h4><a href="repo.html url" target="_blank">{{repo.name}}</a></h4>
              <p>{{repo.description}}</p>
            </div>
            <div class="col-md-3">
              <span class="label label-info">{{repo.watchers}} Watchers</span>
              <span class="label label-success">{{repo.fork}}  Forks</span>
            </div>
-     </div>
+        </div>
+        <hr>
     </div>
   </div>
 </div>
