@@ -16,9 +16,22 @@
         <p style="border-bottom:solid;border-color:purple; padding-bottom:15px;">Repositories:  <span class=label-label-primary >{{user.public_repos}}</span></p>
         <p style="border-bottom:solid;border-color:purple; padding-bottom:15px;">Followers:  {{user.followers}}</p>
         <p style="border-bottom:solid;border-color:purple; padding-bottom:15px;">Following:  {{user.following}}</p>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h3 class="panel-title">Repos</h3>
+       </div>
+       <div class="panel-body">
+         <div *ngFor="let repo of repos">
+         <div class="row">
+           <div class="col-md-9">
+             <h4>{{repo.name}}</h4>
+           </div>
+           <div class="col-md-3">
+           </div>
+     </div>
+    </div>
   </div>
-</div>
-</div>
 </div>
 <div class="container-fluid">
 <form class="form-horizontal" id="input">
