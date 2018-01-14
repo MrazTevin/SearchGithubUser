@@ -9,12 +9,13 @@ import 'rxjs/add/operator/map';
 })
 export class ProfileComponent implements OnInit {
   user[];
-      
+  repos[];
   constructor(private _githubService: GithubService) {
     this._githubService.getUser().subscribe(user => {
       console.log(user);
       this.user = user;
     })
+    this._githubService.getUser().
   }
   ngOnInit() {
   }

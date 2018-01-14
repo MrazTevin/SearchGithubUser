@@ -14,4 +14,7 @@ export class GithubService {
     return this._http.get("http://api.github.com/users/"+this.username)
 
   }
+  getRepository(){
+    return this._http.get("http://api.github.com/users/"+this.username+'/repos')
+
 }
