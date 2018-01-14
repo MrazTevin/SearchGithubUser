@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient}  from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import {User} from './user'
-import {Repository} from './repository'
+import {Repos} from './repos'
 @Injectable()
 export class GithubService {
 
@@ -14,7 +14,7 @@ export class GithubService {
     return this._http.get("http://api.github.com/users/"+this.username)
 
   }
-  getRepository(){
+  getRepos(){
     return this._http.get("http://api.github.com/users/"+this.username+'/repos')
 
 }
