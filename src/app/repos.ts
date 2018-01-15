@@ -1,3 +1,3 @@
 export class Repos {
-    constructor(private repos_url:string,){}
+    constructor(private access_token:string = environment.access_token;
 }

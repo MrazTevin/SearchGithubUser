@@ -23,6 +23,10 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
   }
    searchUser(){
-     console.log('It works');
+     this._githubService.updateUser(this.username);
+     this._githubService.getUser().subscribe(user => {
+       this.user = user;     
+     })
+     //console.log('It works');
    }
 }

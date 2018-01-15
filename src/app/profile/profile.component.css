@@ -12,3 +12,7 @@
   grid-template-columns: 30% 200%;
   grid-row-gap: 5px;
 }
+form {
+  padding-top: 30px;
+  text-align: center;
+}
