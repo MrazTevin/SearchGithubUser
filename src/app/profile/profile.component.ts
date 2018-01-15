@@ -22,5 +22,7 @@ export class ProfileComponent implements OnInit {
   }
   ngOnInit() {
   }
-
+   searchUser(){
+     console.log('It works');
+   }
 }

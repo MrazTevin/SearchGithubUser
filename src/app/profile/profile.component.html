@@ -22,10 +22,10 @@
          <h3 class="panel-title">Repos</h3>
        </div>
        <div class="panel-body">
-         <div *ngFor="let repo of repos">
+         <div *ngFor ="let repo of repos">
          <div class="row">
            <div class="col-md-9">
-             <h4><a href="repo.html url" target="_blank">{{repo.name}}</a></h4>
+             <h4><a href="user.repos_url" target="_blank">{{repo.name}}</a></h4>
              <p>{{repo.description}}</p>
            </div>
            <div class="col-md-3">
@@ -50,3 +50,10 @@
 </form>
 </div>
 --->
+<div class ="row">
+  <div class="col-md-12">
+    <form>
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Enter a GitHub username" name="username" [(ngModel)] ="username" (keyup)="searchUser()">
+      </div>
+    </form>

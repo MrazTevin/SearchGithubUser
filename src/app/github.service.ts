@@ -16,5 +16,4 @@ export class GithubService {
   }
   getRepos(){
     return this._http.get("http://api.github.com/users/"+this.username+'/repos')
-
 }

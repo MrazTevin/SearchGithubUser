@@ -1,3 +1,3 @@
 export class Repos {
-    constructor(private username:string,){}
+    constructor(private repos_url:string,){}
 }
