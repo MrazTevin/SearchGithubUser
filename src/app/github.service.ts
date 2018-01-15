@@ -3,14 +3,15 @@ import {HttpClient}  from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import {User} from './user'
 import {Repos} from './repos'
-import {environment} from '../environments/environment.ts'
+import {environment} from '../environments/environment'
 @Injectable()
 export class GithubService {
-  private apiUrl :string = environment.apiUrl;
+//  private apiUrl :string = environment.apiUrl;
+  username:string;
 
   constructor(private _http: HttpClient){
     console.log('Github Service Ready...');
-    this.username ='MrazTevin';
+    this.username =  'MrazTevin';
 
   }
   getUser(){
@@ -24,4 +25,5 @@ export class GithubService {
 }
 updateUser(username:string){
   this.username = username;
+}
 }
