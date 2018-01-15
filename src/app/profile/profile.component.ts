@@ -25,8 +25,13 @@ export class ProfileComponent implements OnInit {
    searchUser(){
      this._githubService.updateUser(this.username);
      this._githubService.getUser().subscribe(user => {
-       this.user = user;     
+       this.user = user;
      })
      //console.log('It works');
+     this._githubService.getRepos().subscribe(repos => {
+       //console.log(user);
+       this.repos = repos;
+     })
+     
    }
 }
